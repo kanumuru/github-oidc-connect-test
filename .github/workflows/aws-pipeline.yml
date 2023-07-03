@@ -28,7 +28,6 @@ jobs:
 
       - name: 'Terraform init and Terraform apply'
         run: | 
-          aws s3 ls
           aws sts get-caller-identity
           terraform init 
-          terraform destroy -auto-approve 
+          terraform apply -auto-approve 
