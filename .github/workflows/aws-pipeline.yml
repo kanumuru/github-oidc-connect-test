@@ -26,7 +26,7 @@ jobs:
           role-session-name: samplerolesession
           aws-region: 'us-west-2'
 
-      - name: 'Terraform init and Terraform apply'
+      - name: 'Terraform init and Terraform apply '
         run: | 
           aws sts get-caller-identity
           terraform init 
